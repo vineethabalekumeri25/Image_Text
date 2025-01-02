@@ -19,7 +19,7 @@ openai.api_key = openai_api_key
 
 try:
     response = openai.Model.list()
-    print("API Key is valid. Available models:", response)
+    print("API Key is valid.")
 except openai.error.AuthenticationError:
     print("Invalid API Key!")
 
